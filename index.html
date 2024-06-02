@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>welcome Stafngrimr</title>
+  <title>welcomeStafngrimr</title>
   <link rel="stylesheet" href="main.css" type="text/css">
 </head>
+
 <body>
-    <h1>Admin dashboard</h1>
-    <p>Content goes here.</p>
+  <!--main container-->
+  <div id="container">
+    <!--header section-->
+    <div id="header">
+      <!--top half of header-->
+      <div class="header-track">
+        <div id="search-form">
+          <img class="menu-icon" src="img/icon.png" alt="search">
+          <input type="text" id="search-bar" placeholder="Search me, search me!">
+        </div>
+        <div id="right-header-options">
+          <img class="menu-icon" src="img/icon.png" alt="alarm">
+          <img class="menu-icon" src="img/icon.png" alt="user-icon">
+          <h3>Stephen Carder</h3>
+        </div>
+      </div>
+      <!--bottom half of header-->
+      <div class="header-track">
+        <div id="header-greeting">
+          <img class="menu-icon" id="header-profile-icon" src="img/icon.png" alt="Profile Pic">
+          <div id="header-greeting-text">
+            <p>Hi there,</p>
+            <h2>Stephen Carder (@stafngrimr)</h2>
+          </div>
+        </div>
+        <div id="header-buttons">
+          <button type="button">New</button>
+          <button type="button">Upload</button>
+          <button type="button">Share</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="sidebar">
+      <div class="sidebar-nav">
+        <div class="menu-option">
+          <img class="menu-icon" id="sidebar-header-icon" src="img/icon.png" alt="dashboard">
+          <h3>Dashboard</h1>
+        </div>
+      </div>
+      <div class="sidebar-nav">
+        <div class="menu-option">
+          <img class="menu-icon" src="img/icon.png" alt="profile">
+          <p>Profile</p>
+        </div>
+        <div class="menu-option">
+          <img class="menu-icon" src="img/icon.png" alt="messages">
+          <p>Messages</p>
+        </div>
+        <div class="menu-option">
+          <img class="menu-icon" src="img/icon.png" alt="history">
+          <p>History</p>
+        </div>
+        <div class="menu-option">
+          <img class="menu-icon" src="img/icon.png" alt="tasks">
+          <p>Tasks</p>
+        </div>
+        <div class="menu-option">
+          <img class="menu-icon" src="img/icon.png" alt="communities">
+          <p>Communities</p>
+        </div>
+      </div>
+      <div class="sidebar-nav">
+        <div class="menu-option">
+          <img class="menu-icon" src="img/icon.png" alt="settings">
+          <p>Settings</p>
+        </div>
+        <div class="menu-option">
+          <img class="menu-icon" src="img/icon.png" alt="support">
+          <p>Support</p>
+        </div>
+        <div class="menu-option">
+          <img class="menu-icon" src="img/icon.png" alt="privacy">
+          <p>Privacy</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+    </div>
+  </div>
 </body>
+
 </html>
