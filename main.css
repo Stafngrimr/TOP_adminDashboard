@@ -34,6 +34,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 #search-form,
@@ -123,10 +124,10 @@ body {
 #content {
   background-color: #e4e4e7;
   color: black;
-  grid: 2 / 2 / 3 / 3;
+  grid-area: 2 / 2 / 3 / 3;
   display: grid;
   grid-template: 1fr 1fr / 3fr 1fr;
-  box-shadow: 0px 1px 5px grey inset;
+  box-shadow: 0px 1px 5px #9ca3af inset;
 }
 
 #your-projects {
@@ -140,39 +141,71 @@ body {
   align-self: left;
 }
 
-#content-box-container {
-  display: flex;
-  flex-flow: row wrap;
+#myprojects-box-container {
+  display: grid;
+  grid-template: repeat(4, 100px) / repeat(3, 33%);
 }
 
-#content-box-container>div {
+#myprojects-box-container>div {
   background-color: white;
   border-radius: 5px;
-  margin: 10px;
-  height: 110px;
-  width: 200px;
+  margin-bottom: 10px;
+  margin-right: 10px;
   border-left: 5px #eab308 solid;
 }
 
-#announcements {
-  grid: 1 / 2 / 2 / 3;
+.content-boxes {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 7px;
+  font-size: 0.7em;
+  box-shadow: 1px 1px 10px #9ca3af;
+}
+
+.content-boxes>h3 {
+  margin: 0px;
+}
+
+.content-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+.content-buttons-icons {
+  height: 15px;
+  width: 15px;
+  margin-right: 3px;
+}
+
+#announcements {
+  grid-area: 1 / 2 / 2/ 3;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 10px 10px 0px 10px;
+}
+
+#announcements>h3,
+#your-projects>h3,
+#trending>h3 {
+  margin-bottom: 5px;
 }
 
 #announcements-content {
   background-color: white;
-  padding: 15px;
+  padding: 10px;
   border-radius: 5px;
   width: 80%;
   font-size: 0.7em;
+  box-shadow: 1px 1px 10px #9ca3af;
 }
 
 #announcements-content>p {
   color: grey;
 }
 
-#announcements-content>h5,
+#announcements-content>h3,
 #announcements-content>p {
   margin: 2px;
 }
@@ -183,5 +216,64 @@ hr {
 }
 
 #trending {
-  grid: 2 / 2 / 3 / 3;
+  grid-area: 2 / 2 / 3 / 3;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0px 10px 0px 10px
+}
+
+#trending-content {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  box-shadow: 1px 1px 10px #9ca3af;
+}
+
+.trending-menu-option {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 3px;
+}
+
+.trending-twitter>p {
+  margin: 0px;
+}
+
+img.twitter-profile-icon {
+  height: 30px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.twitter-name {
+  color: gray;
+}
+
+footer {
+  margin-top: 100px;
+  display: flex;
+  color: white;
+  font-size: 0.7em;
+  flex-direction: row;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  justify-content: center;
+}
+
+#github img {
+  height: 10px;
+  width: 10px;
+  margin-right: 5px;
+}
+
+a:visited {
+  color: white;
+}
+
+#github img:hover {
+  transform: scale(1.3);
 }
