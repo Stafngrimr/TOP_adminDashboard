@@ -268,20 +268,12 @@ img.twitter-profile-icon {
   border-radius: 20px;
 }
 
-.twitter-name {
-  color: gray;
+img.twitter-profile-icon:hover {
+  transform: scale(1.3);
 }
 
-footer {
-  margin-top: 100px;
-  display: flex;
-  color: white;
-  font-size: 0.7em;
-  flex-direction: row;
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  justify-content: center;
+.twitter-name {
+  color: gray;
 }
 
 #github img {
